@@ -1,0 +1,16 @@
+---
+
+num_round: 5
+num_clients: 100
+batch_size: 20
+num_classes: 10
+num_clients_per_round_fit: 10
+num_clients_per_round_eva: 25
+config_fit:
+  lr: 0.01
+  momentum: 0.9
+  local_epochs: 1
+
+#the num_classes represent digits from 0 to 9 in this MNIST dataset context
+#Therefore, num_classes would be set to 10 to create a neural network model capable of
+#classifying images into one of these 10 classes.

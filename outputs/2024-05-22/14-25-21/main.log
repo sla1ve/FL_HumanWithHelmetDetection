@@ -1,0 +1,27 @@
+[2024-05-22 14:25:21,608][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=5, round_timeout=None)
+[2024-05-22 14:25:26,651][flwr][INFO] - Flower VCE: Ray initialized with resources: {'CPU': 12.0, 'node:127.0.0.1': 1.0, 'object_store_memory': 483277209.0, 'memory': 966554420.0, 'GPU': 1.0}
+[2024-05-22 14:25:26,652][flwr][INFO] - Initializing global parameters
+[2024-05-22 14:25:26,653][flwr][INFO] - Requesting initial parameters from one random client
+[2024-05-22 14:25:37,576][flwr][ERROR] - [36mray::launch_and_get_parameters()[39m (pid=18708, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 600, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\ray\_private\memory_monitor.py", line 156, in raise_if_low_memory
+    raise RayOutOfMemoryError(
+ray._private.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node DESKTOP-P08BMFL is used (15.01 / 15.34 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+20220	2.93GiB	C:\Program Files (x86)\VMware\VMware Workstation\x64\vmware-vmx.exe -T querytoken -s vmx.stdio.keep=
+30948	0.61GiB	C:\Users\ACER\anaconda3\envs\flower_test_1\python.exe d:/HocTap/flower_federated/main.py
+23940	0.54GiB	C:\Users\ACER\AppData\Local\Programs\Opera GX\opera.exe --type=renderer --no-appcompat-clear --with-
+29668	0.41GiB	C:\Users\ACER\AppData\Local\Programs\Microsoft VS Code\Code.exe c:\Users\ACER\.vscode\extensions\ms-
+10184	0.37GiB	C:\Users\ACER\AppData\Local\Programs\Opera GX\opera.exe --type=renderer --no-appcompat-clear --with-
+18708	0.29GiB	C:\Users\ACER\anaconda3\envs\flower_test_1\python.exe C:\Users\ACER\anaconda3\envs\flower_test_1\lib
+31212	0.29GiB	C:\Users\ACER\anaconda3\envs\flower_test_1\python.exe C:\Users\ACER\anaconda3\envs\flower_test_1\lib
+22084	0.29GiB	C:\Users\ACER\anaconda3\envs\flower_test_1\python.exe C:\Users\ACER\anaconda3\envs\flower_test_1\lib
+21212	0.29GiB	C:\Users\ACER\anaconda3\envs\flower_test_1\python.exe C:\Users\ACER\anaconda3\envs\flower_test_1\lib
+1900	0.29GiB	C:\Users\ACER\anaconda3\envs\flower_test_1\python.exe C:\Users\ACER\anaconda3\envs\flower_test_1\lib
+
+In addition, up to 0.0 GiB of shared memory is currently being used by the Ray object store.
+---
+--- Tip: Use the `ray memory` command to list active objects in the cluster.
+--- To disable OOM exceptions, set RAY_DISABLE_MEMORY_MONITOR=1.
+---

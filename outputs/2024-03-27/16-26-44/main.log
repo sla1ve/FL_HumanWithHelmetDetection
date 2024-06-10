@@ -1,0 +1,577 @@
+[2024-03-27 16:26:44,727][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=1, round_timeout=None)
+[2024-03-27 16:26:48,856][flwr][INFO] - Flower VCE: Ray initialized with resources: {'CPU': 12.0, 'memory': 4994260992.0, 'object_store_memory': 2497130496.0, 'GPU': 1.0, 'node:127.0.0.1': 1.0}
+[2024-03-27 16:26:48,858][flwr][INFO] - Initializing global parameters
+[2024-03-27 16:26:48,858][flwr][INFO] - Requesting initial parameters from one random client
+[2024-03-27 16:26:51,787][flwr][INFO] - Received initial parameters from one random client
+[2024-03-27 16:26:51,787][flwr][INFO] - Evaluating initial parameters
+[2024-03-27 16:26:51,788][flwr][INFO] - FL starting
+[2024-03-27 16:26:51,789][flwr][DEBUG] - fit_round 1: strategy sampled 10 clients (out of 100)
+[2024-03-27 16:26:52,061][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=14900, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:52,142][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=14900, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:52,231][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=14900, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:52,351][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=14900, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:52,402][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=14900, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:55,888][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=16908, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:55,920][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=7656, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:55,986][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=17052, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:56,127][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=14504, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:56,145][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=7252, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:56,150][flwr][DEBUG] - fit_round 1 received 0 results and 10 failures
+[2024-03-27 16:26:56,151][flwr][DEBUG] - evaluate_round 1: strategy sampled 25 clients (out of 100)
+[2024-03-27 16:26:56,336][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=7252, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:56,336][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=14504, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:56,504][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=14504, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:56,580][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=7252, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:56,581][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=14504, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:56,598][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=7252, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:56,717][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=7252, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:56,717][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=14504, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:56,901][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=14504, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:56,945][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=7252, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,025][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=7252, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,081][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=17052, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,096][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=14504, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,097][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=14504, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,181][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=14504, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,181][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=17052, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,209][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=16908, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,219][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=7252, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,220][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=7656, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,279][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=7656, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,349][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=7656, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,407][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=16908, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,471][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=16908, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,506][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=7656, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,539][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=16908, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 23, in set_parameters
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+  File "D:\HocTap\flower_federated\client.py", line 23, in <dictcomp>
+    state_dict = OrderedDict({k: torch.Tensor[v] for k, v in params_dict})
+TypeError: 'torch._C._TensorMeta' object is not subscriptable
+[2024-03-27 16:26:57,544][flwr][DEBUG] - evaluate_round 1 received 0 results and 25 failures
+[2024-03-27 16:26:57,544][flwr][INFO] - FL finished in 5.7557907
+[2024-03-27 16:26:57,545][flwr][INFO] - app_fit: losses_distributed []
+[2024-03-27 16:26:57,546][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-03-27 16:26:57,547][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-03-27 16:26:57,547][flwr][INFO] - app_fit: losses_centralized []
+[2024-03-27 16:26:57,548][flwr][INFO] - app_fit: metrics_centralized {}

@@ -1,0 +1,181 @@
+[2024-03-27 16:36:34,893][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=1, round_timeout=None)
+[2024-03-27 16:36:51,765][flwr][INFO] - Flower VCE: Ray initialized with resources: {'CPU': 12.0, 'node:127.0.0.1': 1.0, 'memory': 5452446107.0, 'GPU': 1.0, 'object_store_memory': 2726223052.0}
+[2024-03-27 16:36:51,769][flwr][INFO] - Initializing global parameters
+[2024-03-27 16:36:51,772][flwr][INFO] - Requesting initial parameters from one random client
+[2024-03-27 16:36:54,975][flwr][INFO] - Received initial parameters from one random client
+[2024-03-27 16:36:54,976][flwr][INFO] - Evaluating initial parameters
+[2024-03-27 16:36:54,977][flwr][INFO] - FL starting
+[2024-03-27 16:36:54,978][flwr][DEBUG] - fit_round 1: strategy sampled 10 clients (out of 100)
+[2024-03-27 16:36:55,210][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=14416, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 37, in fit
+    optim = torch.optim.SGD(self.model.parameter(), lr=lr, momentum=momentum)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\torch\nn\modules\module.py", line 1688, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'Net' object has no attribute 'parameter'
+[2024-03-27 16:36:55,303][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=14416, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 37, in fit
+    optim = torch.optim.SGD(self.model.parameter(), lr=lr, momentum=momentum)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\torch\nn\modules\module.py", line 1688, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'Net' object has no attribute 'parameter'
+[2024-03-27 16:36:55,517][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=14416, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 37, in fit
+    optim = torch.optim.SGD(self.model.parameter(), lr=lr, momentum=momentum)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\torch\nn\modules\module.py", line 1688, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'Net' object has no attribute 'parameter'
+[2024-03-27 16:36:55,655][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=14416, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 37, in fit
+    optim = torch.optim.SGD(self.model.parameter(), lr=lr, momentum=momentum)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\torch\nn\modules\module.py", line 1688, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'Net' object has no attribute 'parameter'
+[2024-03-27 16:36:55,715][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=14416, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 37, in fit
+    optim = torch.optim.SGD(self.model.parameter(), lr=lr, momentum=momentum)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\torch\nn\modules\module.py", line 1688, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'Net' object has no attribute 'parameter'
+[2024-03-27 16:36:55,783][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=14416, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 37, in fit
+    optim = torch.optim.SGD(self.model.parameter(), lr=lr, momentum=momentum)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\torch\nn\modules\module.py", line 1688, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'Net' object has no attribute 'parameter'
+[2024-03-27 16:36:59,168][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=4676, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 37, in fit
+    optim = torch.optim.SGD(self.model.parameter(), lr=lr, momentum=momentum)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\torch\nn\modules\module.py", line 1688, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'Net' object has no attribute 'parameter'
+[2024-03-27 16:36:59,347][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=17736, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 37, in fit
+    optim = torch.optim.SGD(self.model.parameter(), lr=lr, momentum=momentum)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\torch\nn\modules\module.py", line 1688, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'Net' object has no attribute 'parameter'
+[2024-03-27 16:36:59,578][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=17720, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 37, in fit
+    optim = torch.optim.SGD(self.model.parameter(), lr=lr, momentum=momentum)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\torch\nn\modules\module.py", line 1688, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'Net' object has no attribute 'parameter'
+[2024-03-27 16:36:59,754][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=1516, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 37, in fit
+    optim = torch.optim.SGD(self.model.parameter(), lr=lr, momentum=momentum)
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\torch\nn\modules\module.py", line 1688, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
+AttributeError: 'Net' object has no attribute 'parameter'
+[2024-03-27 16:36:59,761][flwr][DEBUG] - fit_round 1 received 0 results and 10 failures
+[2024-03-27 16:36:59,763][flwr][DEBUG] - evaluate_round 1: strategy sampled 25 clients (out of 100)
+[2024-03-27 16:37:33,139][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=548, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 600, in ray._raylet.execute_task
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\ray\_private\memory_monitor.py", line 156, in raise_if_low_memory
+    raise RayOutOfMemoryError(
+ray._private.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node DESKTOP-P08BMFL is used (14.58 / 15.34 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+6696	1.46GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\.vscode\extensions\ms-python.deb
+14416	0.7GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+4676	0.48GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+17736	0.48GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+17720	0.48GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+1516	0.48GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+16456	0.43GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+12840	0.4GiB	C:\Program Files\Google\Chrome\Application\chrome.exe --type=renderer --no-appcompat-clear --lang=vi
+5692	0.37GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+10932	0.35GiB	C:\Users\ACER\AppData\Local\Programs\Microsoft VS Code\Code.exe c:\Users\ACER\.vscode\extensions\ms-
+
+In addition, up to 0.0 GiB of shared memory is currently being used by the Ray object store.
+---
+--- Tip: Use the `ray memory` command to list active objects in the cluster.
+--- To disable OOM exceptions, set RAY_DISABLE_MEMORY_MONITOR=1.
+---
+[2024-03-27 16:37:47,411][flwr][DEBUG] - evaluate_round 1 received 24 results and 1 failures
+[2024-03-27 16:37:47,413][flwr][WARNING] - No evaluate_metrics_aggregation_fn provided
+[2024-03-27 16:37:47,414][flwr][INFO] - FL finished in 52.4360504
+[2024-03-27 16:37:47,415][flwr][INFO] - app_fit: losses_distributed [(1, 6.905192335446675)]
+[2024-03-27 16:37:47,416][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-03-27 16:37:47,417][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-03-27 16:37:47,417][flwr][INFO] - app_fit: losses_centralized []
+[2024-03-27 16:37:47,419][flwr][INFO] - app_fit: metrics_centralized {}

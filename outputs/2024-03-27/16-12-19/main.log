@@ -1,0 +1,2483 @@
+[2024-03-27 16:12:19,359][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=5, round_timeout=None)
+[2024-03-27 16:12:23,097][flwr][INFO] - Flower VCE: Ray initialized with resources: {'object_store_memory': 2634362880.0, 'GPU': 1.0, 'node:127.0.0.1': 1.0, 'CPU': 12.0, 'memory': 5268725760.0}
+[2024-03-27 16:12:23,098][flwr][INFO] - Initializing global parameters
+[2024-03-27 16:12:23,099][flwr][INFO] - Requesting initial parameters from one random client
+[2024-03-27 16:12:25,885][flwr][INFO] - Received initial parameters from one random client
+[2024-03-27 16:12:25,885][flwr][INFO] - Evaluating initial parameters
+[2024-03-27 16:12:25,886][flwr][INFO] - FL starting
+[2024-03-27 16:12:25,886][flwr][DEBUG] - fit_round 1: strategy sampled 10 clients (out of 100)
+[2024-03-27 16:12:26,159][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=17028, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:26,257][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=17028, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:26,260][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=17028, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:26,402][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=17028, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:26,467][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=17028, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:29,283][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:29,518][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:29,530][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:29,554][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:29,569][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:29,573][flwr][DEBUG] - fit_round 1 received 0 results and 10 failures
+[2024-03-27 16:12:29,574][flwr][DEBUG] - evaluate_round 1: strategy sampled 25 clients (out of 100)
+[2024-03-27 16:12:29,818][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:29,823][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:29,856][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:29,991][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,048][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,079][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,092][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,184][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,203][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,336][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,337][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,416][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,432][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,504][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,504][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,594][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,633][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,634][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,659][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,712][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,756][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,768][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,831][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,888][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,914][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:30,918][flwr][DEBUG] - evaluate_round 1 received 0 results and 25 failures
+[2024-03-27 16:12:30,919][flwr][DEBUG] - fit_round 2: strategy sampled 10 clients (out of 100)
+[2024-03-27 16:12:31,127][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:31,187][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:31,220][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:31,350][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:31,351][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:31,412][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:31,421][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:31,443][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:31,450][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:31,459][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:31,463][flwr][DEBUG] - fit_round 2 received 0 results and 10 failures
+[2024-03-27 16:12:31,464][flwr][DEBUG] - evaluate_round 2: strategy sampled 25 clients (out of 100)
+[2024-03-27 16:12:31,722][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:31,732][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:31,744][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:31,884][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:31,899][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,030][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,031][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,031][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,045][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,093][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,115][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,143][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,203][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,286][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,296][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,345][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,366][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,383][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,439][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,499][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,511][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,583][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,652][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,657][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,744][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,748][flwr][DEBUG] - evaluate_round 2 received 0 results and 25 failures
+[2024-03-27 16:12:32,749][flwr][DEBUG] - fit_round 3: strategy sampled 10 clients (out of 100)
+[2024-03-27 16:12:32,961][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:32,966][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,049][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,097][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,111][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,128][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,190][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,243][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,246][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,311][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,314][flwr][DEBUG] - fit_round 3 received 0 results and 10 failures
+[2024-03-27 16:12:33,315][flwr][DEBUG] - evaluate_round 3: strategy sampled 25 clients (out of 100)
+[2024-03-27 16:12:33,528][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,542][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,615][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,648][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,737][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,738][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,809][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,832][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,938][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:33,939][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,035][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,041][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,104][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,114][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,162][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,226][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,227][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,233][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,285][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,290][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,364][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,418][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,513][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,559][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,564][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,568][flwr][DEBUG] - evaluate_round 3 received 0 results and 25 failures
+[2024-03-27 16:12:34,569][flwr][DEBUG] - fit_round 4: strategy sampled 10 clients (out of 100)
+[2024-03-27 16:12:34,765][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,798][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,804][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,922][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:34,931][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,064][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=13532, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,070][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,072][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,095][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,098][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,102][flwr][DEBUG] - fit_round 4 received 0 results and 10 failures
+[2024-03-27 16:12:35,103][flwr][DEBUG] - evaluate_round 4: strategy sampled 25 clients (out of 100)
+[2024-03-27 16:12:35,377][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,420][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,472][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,473][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,473][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,500][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,633][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,646][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,748][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,771][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,824][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,867][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,907][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,976][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,976][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:35,977][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,070][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,099][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,100][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,154][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,181][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,253][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,259][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,328][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,357][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,361][flwr][DEBUG] - evaluate_round 4 received 0 results and 25 failures
+[2024-03-27 16:12:36,362][flwr][DEBUG] - fit_round 5: strategy sampled 10 clients (out of 100)
+[2024-03-27 16:12:36,611][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,623][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,648][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,678][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,679][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,739][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,751][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,832][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,841][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,903][flwr][ERROR] - [36mray::launch_and_fit()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 148, in launch_and_fit
+    return maybe_call_fit(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 184, in maybe_call_fit
+    return client.fit(fit_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 297, in _fit
+    results = self.numpy_client.fit(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 32, in fit
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:36,908][flwr][DEBUG] - fit_round 5 received 0 results and 10 failures
+[2024-03-27 16:12:36,909][flwr][DEBUG] - evaluate_round 5: strategy sampled 25 clients (out of 100)
+[2024-03-27 16:12:37,079][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,137][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,163][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,328][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,386][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,387][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,395][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,396][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,498][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,498][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,614][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,614][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,686][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,743][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,744][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,822][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=4620, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,831][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=5080, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,831][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,915][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,938][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:37,991][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:38,008][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:38,075][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=10800, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:38,076][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:38,113][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=15996, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 640, in ray._raylet.execute_task
+  File "python\ray\_raylet.pyx", line 644, in ray._raylet.execute_task
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\simulation\ray_transport\ray_client_proxy.py", line 160, in launch_and_evaluate
+    return maybe_call_evaluate(
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\client.py", line 205, in maybe_call_evaluate
+    return client.evaluate(evaluate_ins)
+  File "C:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\flwr\client\app.py", line 321, in _evaluate
+    results = self.numpy_client.evaluate(parameters, ins.config)  # type: ignore
+  File "D:\HocTap\flower_federated\client.py", line 46, in evaluate
+    self.set_parameters(parameters)
+  File "D:\HocTap\flower_federated\client.py", line 21, in set_parameters
+    params_dict = zip(self.model.state_dict().key(), parameters)
+AttributeError: 'collections.OrderedDict' object has no attribute 'key'
+[2024-03-27 16:12:38,116][flwr][DEBUG] - evaluate_round 5 received 0 results and 25 failures
+[2024-03-27 16:12:38,117][flwr][INFO] - FL finished in 12.231057000000002
+[2024-03-27 16:12:38,119][flwr][INFO] - app_fit: losses_distributed []
+[2024-03-27 16:12:38,120][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-03-27 16:12:38,121][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-03-27 16:12:38,121][flwr][INFO] - app_fit: losses_centralized []
+[2024-03-27 16:12:38,121][flwr][INFO] - app_fit: metrics_centralized {}

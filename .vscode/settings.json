@@ -1,0 +1,15 @@
+{
+    "cSpell.words": [
+        "omegaconf",
+        "optim",
+        "relu",
+        "testloaders",
+        "testset",
+        "trainloader",
+        "trainloaders",
+        "trainsets",
+        "validationloaders",
+        "valloader",
+        "valloaders"
+    ]
+}

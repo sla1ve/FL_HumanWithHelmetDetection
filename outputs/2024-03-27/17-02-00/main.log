@@ -1,0 +1,133 @@
+[2024-03-27 17:02:01,195][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=5, round_timeout=None)
+[2024-03-27 17:02:06,470][flwr][INFO] - Flower VCE: Ray initialized with resources: {'CPU': 12.0, 'object_store_memory': 2509897728.0, 'memory': 5019795456.0, 'GPU': 1.0, 'node:127.0.0.1': 1.0}
+[2024-03-27 17:02:06,474][flwr][INFO] - Initializing global parameters
+[2024-03-27 17:02:06,477][flwr][INFO] - Requesting initial parameters from one random client
+[2024-03-27 17:02:09,869][flwr][INFO] - Received initial parameters from one random client
+[2024-03-27 17:02:09,869][flwr][INFO] - Evaluating initial parameters
+[2024-03-27 17:02:32,068][flwr][INFO] - initial parameters (loss, other metrics): 1082.537721157074, {'accuracy': 0.09915}
+[2024-03-27 17:02:32,071][flwr][INFO] - FL starting
+[2024-03-27 17:02:32,073][flwr][DEBUG] - fit_round 1: strategy sampled 10 clients (out of 100)
+[2024-03-27 17:03:01,272][flwr][DEBUG] - fit_round 1 received 10 results and 0 failures
+[2024-03-27 17:03:01,376][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+[2024-03-27 17:03:23,288][flwr][INFO] - fit progress: (1, 1075.4306297302246, {'accuracy': 0.17778333333333332}, 51.215100899999996)
+[2024-03-27 17:03:23,288][flwr][DEBUG] - evaluate_round 1: strategy sampled 25 clients (out of 100)
+[2024-03-27 17:03:46,923][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=6004, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 600, in ray._raylet.execute_task
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\ray\_private\memory_monitor.py", line 156, in raise_if_low_memory
+    raise RayOutOfMemoryError(
+ray._private.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node DESKTOP-P08BMFL is used (15.03 / 15.34 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+5508	1.57GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\.vscode\extensions\ms-python.deb
+2920	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+19312	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+16712	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+17068	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+1192	0.44GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+924	0.44GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+6620	0.44GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+3116	0.44GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+14928	0.4GiB	C:\Program Files\Google\Chrome\Application\chrome.exe --type=renderer --no-appcompat-clear --lang=vi
+
+In addition, up to 0.0 GiB of shared memory is currently being used by the Ray object store.
+---
+--- Tip: Use the `ray memory` command to list active objects in the cluster.
+--- To disable OOM exceptions, set RAY_DISABLE_MEMORY_MONITOR=1.
+---
+[2024-03-27 17:03:48,464][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=19008, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 600, in ray._raylet.execute_task
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\ray\_private\memory_monitor.py", line 156, in raise_if_low_memory
+    raise RayOutOfMemoryError(
+ray._private.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node DESKTOP-P08BMFL is used (14.79 / 15.34 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+5508	1.71GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\.vscode\extensions\ms-python.deb
+2920	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+6004	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+19312	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+16712	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+6620	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+17068	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+3116	0.51GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+1192	0.44GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+924	0.44GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+
+In addition, up to 0.0 GiB of shared memory is currently being used by the Ray object store.
+---
+--- Tip: Use the `ray memory` command to list active objects in the cluster.
+--- To disable OOM exceptions, set RAY_DISABLE_MEMORY_MONITOR=1.
+---
+[2024-03-27 17:04:03,168][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=12488, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 600, in ray._raylet.execute_task
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\ray\_private\memory_monitor.py", line 156, in raise_if_low_memory
+    raise RayOutOfMemoryError(
+ray._private.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node DESKTOP-P08BMFL is used (14.79 / 15.34 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+5508	1.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\.vscode\extensions\ms-python.deb
+2920	0.54GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+6004	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+19312	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+1192	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+924	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+19008	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+16712	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+17068	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+3116	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+
+In addition, up to 0.0 GiB of shared memory is currently being used by the Ray object store.
+---
+--- Tip: Use the `ray memory` command to list active objects in the cluster.
+--- To disable OOM exceptions, set RAY_DISABLE_MEMORY_MONITOR=1.
+---
+[2024-03-27 17:04:10,360][flwr][DEBUG] - evaluate_round 1 received 22 results and 3 failures
+[2024-03-27 17:04:10,362][flwr][WARNING] - No evaluate_metrics_aggregation_fn provided
+[2024-03-27 17:04:10,367][flwr][DEBUG] - fit_round 2: strategy sampled 10 clients (out of 100)
+[2024-03-27 17:04:34,529][flwr][DEBUG] - fit_round 2 received 10 results and 0 failures
+[2024-03-27 17:04:57,790][flwr][INFO] - fit progress: (2, 1056.3656136989594, {'accuracy': 0.27155}, 145.7177436)
+[2024-03-27 17:04:57,791][flwr][DEBUG] - evaluate_round 2: strategy sampled 25 clients (out of 100)
+[2024-03-27 17:05:48,260][flwr][DEBUG] - evaluate_round 2 received 25 results and 0 failures
+[2024-03-27 17:05:48,262][flwr][DEBUG] - fit_round 3: strategy sampled 10 clients (out of 100)
+[2024-03-27 17:06:12,151][flwr][DEBUG] - fit_round 3 received 10 results and 0 failures
+[2024-03-27 17:06:37,147][flwr][INFO] - fit progress: (3, 915.2466553449631, {'accuracy': 0.4399666666666667}, 245.07496410000002)
+[2024-03-27 17:06:37,149][flwr][DEBUG] - evaluate_round 3: strategy sampled 25 clients (out of 100)
+[2024-03-27 17:07:10,213][flwr][ERROR] - [36mray::launch_and_evaluate()[39m (pid=17068, ip=127.0.0.1)
+  File "python\ray\_raylet.pyx", line 600, in ray._raylet.execute_task
+  File "c:\Users\ACER\anaconda3\envs\flower_test_1\lib\site-packages\ray\_private\memory_monitor.py", line 156, in raise_if_low_memory
+    raise RayOutOfMemoryError(
+ray._private.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node DESKTOP-P08BMFL is used (14.6 / 15.34 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+5508	1.15GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\.vscode\extensions\ms-python.deb
+19312	0.66GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+19008	0.66GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+6004	0.61GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+16712	0.61GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+2920	0.6GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+1192	0.55GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+17068	0.54GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+924	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+4272	0.53GiB	c:\Users\ACER\anaconda3\envs\flower_test_1\python.exe c:\Users\ACER\anaconda3\envs\flower_test_1\lib
+
+In addition, up to 0.0 GiB of shared memory is currently being used by the Ray object store.
+---
+--- Tip: Use the `ray memory` command to list active objects in the cluster.
+--- To disable OOM exceptions, set RAY_DISABLE_MEMORY_MONITOR=1.
+---
+[2024-03-27 17:07:36,022][flwr][DEBUG] - evaluate_round 3 received 24 results and 1 failures
+[2024-03-27 17:07:36,025][flwr][DEBUG] - fit_round 4: strategy sampled 10 clients (out of 100)
+[2024-03-27 17:07:56,848][flwr][DEBUG] - fit_round 4 received 10 results and 0 failures
+[2024-03-27 17:08:18,979][flwr][INFO] - fit progress: (4, 440.27546536922455, {'accuracy': 0.6970166666666666}, 346.90623459999995)
+[2024-03-27 17:08:18,980][flwr][DEBUG] - evaluate_round 4: strategy sampled 25 clients (out of 100)
+[2024-03-27 17:09:09,380][flwr][DEBUG] - evaluate_round 4 received 25 results and 0 failures
+[2024-03-27 17:09:09,382][flwr][DEBUG] - fit_round 5: strategy sampled 10 clients (out of 100)
+[2024-03-27 17:09:29,631][flwr][DEBUG] - fit_round 5 received 10 results and 0 failures
+[2024-03-27 17:09:50,819][flwr][INFO] - fit progress: (5, 293.3586145043373, {'accuracy': 0.80425}, 438.74672380000004)
+[2024-03-27 17:09:50,821][flwr][DEBUG] - evaluate_round 5: strategy sampled 25 clients (out of 100)
+[2024-03-27 17:10:38,307][flwr][DEBUG] - evaluate_round 5 received 25 results and 0 failures
+[2024-03-27 17:10:38,309][flwr][INFO] - FL finished in 486.23609110000007
+[2024-03-27 17:10:38,310][flwr][INFO] - app_fit: losses_distributed [(1, 6.874810218811035), (2, 6.7463252735137935), (3, 5.860713933904965), (4, 2.8178969264030456), (5, 1.9058514106273652)]
+[2024-03-27 17:10:38,312][flwr][INFO] - app_fit: metrics_distributed_fit {}
+[2024-03-27 17:10:38,313][flwr][INFO] - app_fit: metrics_distributed {}
+[2024-03-27 17:10:38,314][flwr][INFO] - app_fit: losses_centralized [(0, 1082.537721157074), (1, 1075.4306297302246), (2, 1056.3656136989594), (3, 915.2466553449631), (4, 440.27546536922455), (5, 293.3586145043373)]
+[2024-03-27 17:10:38,315][flwr][INFO] - app_fit: metrics_centralized {'accuracy': [(0, 0.09915), (1, 0.17778333333333332), (2, 0.27155), (3, 0.4399666666666667), (4, 0.6970166666666666), (5, 0.80425)]}

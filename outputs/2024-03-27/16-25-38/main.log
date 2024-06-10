@@ -1,0 +1,1 @@
+[2024-03-27 16:25:38,494][flwr][INFO] - Starting Flower simulation, config: ServerConfig(num_rounds=10, round_timeout=None)
