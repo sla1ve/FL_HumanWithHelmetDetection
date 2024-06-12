@@ -2,9 +2,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-# Note the model and functions here defined do not have any FL-specific components.
-
-
 class Net(nn.Module):
     """A simple CNN suitable for simple vision tasks."""
 
@@ -26,8 +23,7 @@ class Net(nn.Module):
         x = self.fc3(x)
         return x
 
-
-def train(net, trainloader, optimizer, epochs, device: str):
+def train(net, trainloader, optimizer, epochs, device):
     """Train the network on the training set.
 
     This is a fairly simple training loop for PyTorch.
@@ -35,30 +31,32 @@ def train(net, trainloader, optimizer, epochs, device: str):
     criterion = torch.nn.CrossEntropyLoss()
     net.train()
     net.to(device)
-    for _ in range(epochs):
+    for epoch in range(epochs):
         for images, labels in trainloader:
             images, labels = images.to(device), labels.to(device)
             optimizer.zero_grad()
             loss = criterion(net(images), labels)
             loss.backward()
             optimizer.step()
+        print(f"Epoch {epoch+1}/{epochs} complete.")
 
-
-def test(net, testloader, device: str):
+def test(net, testloader, device):
     """Validate the network on the entire test set.
 
     and report loss and accuracy.
     """
     criterion = torch.nn.CrossEntropyLoss()
-    correct, loss = 0, 0.0
+    correct, total_loss = 0, 0.0
     net.eval()
     net.to(device)
     with torch.no_grad():
         for data in testloader:
             images, labels = data[0].to(device), data[1].to(device)
             outputs = net(images)
-            loss += criterion(outputs, labels).item()
+            loss = criterion(outputs, labels).item()
+            total_loss += loss
             _, predicted = torch.max(outputs.data, 1)
             correct += (predicted == labels).sum().item()
+    avg_loss = total_loss / len(testloader)
     accuracy = correct / len(testloader.dataset)
-    return loss, accuracy
+    return avg_loss, accuracy

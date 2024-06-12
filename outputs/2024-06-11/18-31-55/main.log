@@ -1,0 +1,71 @@
+[2024-06-11 18:31:55,300][flwr][INFO] - Starting Flower simulation, config: num_rounds=5, no round_timeout
+[2024-06-11 18:32:00,470][flwr][INFO] - Flower VCE: Ray initialized with resources: {'GPU': 1.0, 'node:127.0.0.1': 1.0, 'object_store_memory': 1948591718.0, 'memory': 3897183438.0, 'accelerator_type:G': 1.0, 'node:__internal_head__': 1.0, 'CPU': 16.0}
+[2024-06-11 18:32:00,470][flwr][INFO] - Optimize your simulation with Flower VCE: https://flower.ai/docs/framework/how-to-run-simulations.html
+[2024-06-11 18:32:00,470][flwr][INFO] - Flower VCE: Resources for each Virtual Client: {'num_cpus': 2, 'num_gpus': 0.25}
+[2024-06-11 18:32:00,486][flwr][INFO] - Flower VCE: Creating VirtualClientEngineActorPool with 4 actors
+[2024-06-11 18:32:00,487][flwr][INFO] - [INIT]
+[2024-06-11 18:32:00,487][flwr][INFO] - Requesting initial parameters from one random client
+[2024-06-11 18:32:07,701][flwr][INFO] - Received initial parameters from one random client
+[2024-06-11 18:32:07,701][flwr][INFO] - Evaluating initial global parameters
+[2024-06-11 18:32:20,686][flwr][INFO] - initial parameters (loss, other metrics): 1079.6586356163025, {'accuracy': 0.07798333333333334}
+[2024-06-11 18:32:20,686][flwr][INFO] - 
+[2024-06-11 18:32:20,687][flwr][INFO] - [ROUND 1]
+[2024-06-11 18:32:20,687][flwr][INFO] - configure_fit: strategy sampled 10 clients (out of 100)
+[2024-06-11 18:32:44,623][flwr][INFO] - aggregate_fit: received 10 results and 0 failures
+[2024-06-11 18:32:44,631][flwr][WARNING] - No fit_metrics_aggregation_fn provided
+[2024-06-11 18:32:58,006][flwr][INFO] - fit progress: (1, 1053.7139537334442, {'accuracy': 0.41073333333333334}, 37.31993930000044)
+[2024-06-11 18:32:58,006][flwr][INFO] - configure_evaluate: strategy sampled 25 clients (out of 100)
+[2024-06-11 18:33:46,616][flwr][INFO] - aggregate_evaluate: received 25 results and 0 failures
+[2024-06-11 18:33:46,616][flwr][WARNING] - No evaluate_metrics_aggregation_fn provided
+[2024-06-11 18:33:46,616][flwr][INFO] - 
+[2024-06-11 18:33:46,616][flwr][INFO] - [ROUND 2]
+[2024-06-11 18:33:46,616][flwr][INFO] - configure_fit: strategy sampled 10 clients (out of 100)
+[2024-06-11 18:34:07,962][flwr][INFO] - aggregate_fit: received 10 results and 0 failures
+[2024-06-11 18:34:20,503][flwr][INFO] - fit progress: (2, 823.8983509540558, {'accuracy': 0.43195}, 119.81973900000048)
+[2024-06-11 18:34:20,507][flwr][INFO] - configure_evaluate: strategy sampled 25 clients (out of 100)
+[2024-06-11 18:35:06,433][flwr][INFO] - aggregate_evaluate: received 25 results and 0 failures
+[2024-06-11 18:35:06,433][flwr][INFO] - 
+[2024-06-11 18:35:06,433][flwr][INFO] - [ROUND 3]
+[2024-06-11 18:35:06,433][flwr][INFO] - configure_fit: strategy sampled 10 clients (out of 100)
+[2024-06-11 18:35:26,474][flwr][INFO] - aggregate_fit: received 10 results and 0 failures
+[2024-06-11 18:35:39,022][flwr][INFO] - fit progress: (3, 456.02135771512985, {'accuracy': 0.6984166666666667}, 198.33865349999996)
+[2024-06-11 18:35:39,022][flwr][INFO] - configure_evaluate: strategy sampled 25 clients (out of 100)
+[2024-06-11 18:36:25,882][flwr][INFO] - aggregate_evaluate: received 25 results and 0 failures
+[2024-06-11 18:36:25,882][flwr][INFO] - 
+[2024-06-11 18:36:25,882][flwr][INFO] - [ROUND 4]
+[2024-06-11 18:36:25,882][flwr][INFO] - configure_fit: strategy sampled 10 clients (out of 100)
+[2024-06-11 18:36:46,027][flwr][INFO] - aggregate_fit: received 10 results and 0 failures
+[2024-06-11 18:36:58,568][flwr][INFO] - fit progress: (4, 329.35939687490463, {'accuracy': 0.8006333333333333}, 277.8818592000007)
+[2024-06-11 18:36:58,569][flwr][INFO] - configure_evaluate: strategy sampled 25 clients (out of 100)
+[2024-06-11 18:37:48,589][flwr][INFO] - aggregate_evaluate: received 25 results and 0 failures
+[2024-06-11 18:37:48,591][flwr][INFO] - 
+[2024-06-11 18:37:48,591][flwr][INFO] - [ROUND 5]
+[2024-06-11 18:37:48,591][flwr][INFO] - configure_fit: strategy sampled 10 clients (out of 100)
+[2024-06-11 18:38:09,570][flwr][INFO] - aggregate_fit: received 10 results and 0 failures
+[2024-06-11 18:38:22,747][flwr][INFO] - fit progress: (5, 250.08031287789345, {'accuracy': 0.84655}, 362.0609615000003)
+[2024-06-11 18:38:22,748][flwr][INFO] - configure_evaluate: strategy sampled 25 clients (out of 100)
+[2024-06-11 18:39:10,941][flwr][INFO] - aggregate_evaluate: received 25 results and 0 failures
+[2024-06-11 18:39:10,941][flwr][INFO] - 
+[2024-06-11 18:39:10,941][flwr][INFO] - [SUMMARY]
+[2024-06-11 18:39:10,941][flwr][INFO] - Run finished 5 round(s) in 410.26s
+[2024-06-11 18:39:10,941][flwr][INFO] - 	History (loss, distributed):
+[2024-06-11 18:39:10,941][flwr][INFO] - 		round 1: 6.737076578140258
+[2024-06-11 18:39:10,941][flwr][INFO] - 		round 2: 5.223241386413574
+[2024-06-11 18:39:10,941][flwr][INFO] - 		round 3: 2.949539313316345
+[2024-06-11 18:39:10,941][flwr][INFO] - 		round 4: 2.1746472978591918
+[2024-06-11 18:39:10,941][flwr][INFO] - 		round 5: 1.6225825583934783
+[2024-06-11 18:39:10,941][flwr][INFO] - 	History (loss, centralized):
+[2024-06-11 18:39:10,945][flwr][INFO] - 		round 0: 1079.6586356163025
+[2024-06-11 18:39:10,945][flwr][INFO] - 		round 1: 1053.7139537334442
+[2024-06-11 18:39:10,945][flwr][INFO] - 		round 2: 823.8983509540558
+[2024-06-11 18:39:10,945][flwr][INFO] - 		round 3: 456.02135771512985
+[2024-06-11 18:39:10,945][flwr][INFO] - 		round 4: 329.35939687490463
+[2024-06-11 18:39:10,946][flwr][INFO] - 		round 5: 250.08031287789345
+[2024-06-11 18:39:10,946][flwr][INFO] - 	History (metrics, centralized):
+[2024-06-11 18:39:10,946][flwr][INFO] - 	{'accuracy': [(0, 0.07798333333333334),
+[2024-06-11 18:39:10,946][flwr][INFO] - 	              (1, 0.41073333333333334),
+[2024-06-11 18:39:10,946][flwr][INFO] - 	              (2, 0.43195),
+[2024-06-11 18:39:10,947][flwr][INFO] - 	              (3, 0.6984166666666667),
+[2024-06-11 18:39:10,947][flwr][INFO] - 	              (4, 0.8006333333333333),
+[2024-06-11 18:39:10,947][flwr][INFO] - 	              (5, 0.84655)]}
+[2024-06-11 18:39:10,947][flwr][INFO] - 
