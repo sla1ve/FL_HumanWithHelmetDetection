@@ -41,9 +41,6 @@ def main(cfg: DictConfig):
         config=fl.server.ServerConfig(num_rounds=cfg.num_round),
         strategy=strategy,
         client_resources={"num_cpus": 2, "num_gpus": 0.25},
-        # the default of the client resources will be 1 cpu and 0 gpus
-        # the gpus is a ratio, it shows the number of client that can work parallel to each other
-        # for ex: 0.25 is to have 4 client work concurrently on 1 gpu
     )
     ##6. Save your results
     save_path = HydraConfig.get().runtime.output_dir

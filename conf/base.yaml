@@ -1,11 +1,12 @@
 ---
 
-num_round: 10
-num_clients: 100
-batch_size: 20
-num_classes: 10
-num_clients_per_round_fit: 10
-num_clients_per_round_eva: 25
+num_round: 20
+num_clients: 2
+batch_size: 256
+num_partitions: 20
+num_classes: 36
+num_clients_per_round_fit: 2
+num_clients_per_round_eva: 2
 config_fit:
   lr: 0.01
   momentum: 0.9

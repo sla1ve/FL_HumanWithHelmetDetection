@@ -47,7 +47,6 @@ class FlowerClient(fl.client.NumPyClient):
 
         return float(loss), len(self.valloader), {"accuracy": accuracy}
 
-
 # fully connected layers are for classifying image  s to a particular cate
 # after we have extract the features from the convolutional layers
 def generate_client_fn(trainloaders, valloaders, num_classes):
